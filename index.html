@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<script src="js/tool.js"></script>-->
+		
+		<style type="text/css">
+			#loading{
+				border: 1px solid blue;
+				border-radius: 100px;
+				height: 100px;
+				width: 100px;
+				line-height: 100px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dv"></div>
+		
+		<div id="loading">
+			0%
+		</div>
+		<div>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563193&di=e4dcc9b811f438f87dd17888d971dc98&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F156a0c13fd369e473e7074c20ab1ee79b99d7aef.jpg" height="200px" width="200px" />
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775582540&di=c50cc6a27cd36c305d709875aa652274&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D4171608061%2C3640662274%26fm%3D214%26gp%3D0.jpg" height="200px" width="200px" />
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563192&di=b68c8481e22eb2b88f9e3bb3d4545379&imgtype=0&src=http%3A%2F%2Fs9.knowsky.com%2Fbizhi%2Fl%2F20100205%2F201003204%2520%252823%2529.jpg" height="200px" width="200px" />
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563192&di=196c22ffc3848555e774eb72fca30791&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201201%2F17%2F20120117205753_uevKf.jpg" height="200px" width="200px" />
+		</div>
+		<script src="js/yctool.js"></script>
+		<script>
+			var dv = document.getElementById('dv');
+
+			var toola = new tool({
+				'isOpenLog':true,
+//				'isInsetJq':true,
+			});
+			
+			var toNeedJsArr = [
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/chokcoco/jQuery-/blob/master/jquery-1.10.2__read.js',
+				'https://github.com/crazycodeboy/react-native-easy-toast/blob/master/index.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js',
+				'https://github.com/wei63w/script.js/blob/master/dist/script.js'
+				];
+			var toNeedCssArr = [
+				'https://github.com/daneden/animate.css/blob/master/animate.css',
+				'https://cdn.bootcss.com/loaders.css/0.1.2/loaders.css',
+				'https://cdn.bootcss.com/loaders.css/0.1.1/loaders.css',
+				'https://cdn.bootcss.com/basscss/8.0.10/css/basscss-cp.css'
+			];
+			var toNeedImgArr = [
+				'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563193&di=e4dcc9b811f438f87dd17888d971dc98&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F156a0c13fd369e473e7074c20ab1ee79b99d7aef.jpg',
+				'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775582540&di=c50cc6a27cd36c305d709875aa652274&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D4171608061%2C3640662274%26fm%3D214%26gp%3D0.jpg',
+				'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563192&di=b68c8481e22eb2b88f9e3bb3d4545379&imgtype=0&src=http%3A%2F%2Fs9.knowsky.com%2Fbizhi%2Fl%2F20100205%2F201003204%2520%252823%2529.jpg',
+				'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551775563192&di=196c22ffc3848555e774eb72fca30791&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201201%2F17%2F20120117205753_uevKf.jpg'
+			];
+			toola.loadJsByPaths(toNeedJsArr);
+			toola.loadCssByPaths(toNeedCssArr);
+			toola.loadImageByPaths(toNeedImgArr);
+			toola.jsLoaderProgress();
+
+
+///loading start
+
+
+///loading end
+
+
+
+
+
+		</script>
+	</body>
+</html>
