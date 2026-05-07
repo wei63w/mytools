@@ -1,4 +1,16 @@
 # mytools
-mytools
-it mabe load js,css,img by url paths
-![示意图](https://github.com/wei63w/mytools/blob/master/my.gif)
+
+## 项目简介
+一个静态网页示例，入口文件为 index.html。
+
+## 目录
+- `index.html`
+- `js`
+- `my.gif`
+- `README.md`
+
+## 快速开始
+直接在浏览器中打开 `index.html`。
+
+## 说明
+- 这是一个静态前端示例，通常不需要额外构建步骤。
